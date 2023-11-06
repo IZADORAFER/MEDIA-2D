@@ -19,4 +19,9 @@ frm.addEventListener("submit", (e) => {   //"escuta" evento submit do form
 
     resp1.inneText = `${resposta}-------------------------`
     resp2.inneText = `${numContas} Contas(s)- Total R$: ${ValTotal.toFixed(2)}`
+
+    frm.inDescricao.value = ""   //limpa campos de forq
+    frm.inValor = ""
+    frm.inDescricao.focus()      // posiciona no campo inDescricao de fora 
 })
+       
